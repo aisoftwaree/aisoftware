@@ -1,0 +1,7 @@
+[
+{"key":"mouse","note":""},
+{"key":"morning","note":""},
+{"key":"cry","note":""},
+{"key":"free fire","note":"cháy chùa thì gọi là gì?"}
+
+]
