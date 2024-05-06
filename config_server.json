@@ -1,4 +1,4 @@
 {
-  "changelog":"New version 2.0\n - 700k/Tuần(Giảm 20% Đối Với Cộng Tác Viên)\n - 1499k/Tháng(Giảm 20% Đối Với Cộng Tác Viên)\n [*] Bạn Giới Thiệu Tool Cho Người Khác Và Người Đó Thuê Tool Thì Bạn Là Cộng Tác Viên\n [!] Bản 2.0 Là Chạy Server Khác Với Bản 1.9, All Key Sẽ Trial 7 Day 2.0\n [!] Lỗi Mở Edge Không Phải Lỗi Của Tool \n   + Update Bản EdgeDev Lên 126(Bản Mới Nhất Hiện Tại)\n   + Thay file msedgedriver.exe bằng file : https://msedgedriver.azureedge.net/126.0.2552.0/edgedriver_win64.zip",
+  "changelog":"New version 2.0<br> - 700k/Tuần(Giảm 20% Đối Với Cộng Tác Viên)<br> - 1499k/Tháng(Giảm 20% Đối Với Cộng Tác Viên)<br> [*] Bạn Giới Thiệu Tool Cho Người Khác Và Người Đó Thuê Tool Thì Bạn Là Cộng Tác Viên<br> 2.0 Đang Lỗi Copy Mail (Không Copy Được Mail) <br> [!] Bản 2.0 Là Chạy Server Khác Với Bản 1.9, All Key Sẽ Trial 7 Day 2.0<br> [!] Lỗi Mở Edge Không Phải Lỗi Của Tool <br>   + Update Bản EdgeDev Lên 126(Bản Mới Nhất Hiện Tại)<br>   + Thay file msedgedriver.exe bằng file : https://msedgedriver.azureedge.net/126.0.2552.0/edgedriver_win64.zip",
   "log":"ele,//*[@value='Verify'],error,2Fa ?|"
 }
