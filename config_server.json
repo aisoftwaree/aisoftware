@@ -1,4 +1,4 @@
 {
   "changelog":"New version 2.0<br> - Giá ib t.me/instocker <br>   + Update Bản EdgeDev Lên 126(Bản Mới Nhất Hiện Tại)<br>   + Thay file msedgedriver.exe bằng file : https://msedgedriver.azureedge.net/126.0.2552.0/edgedriver_win64.zip<br><br>[*] Effect Mail Done Là Có Hiện Màu Mail Hay Không  (Ví Dụ : Mail Có Thư Sẽ Hiện Nền Dòng Màu Xanh Lá ,Mail Retry Sẽ Hiện Màu Xanh Lục,..)<br> Version 2.1 : <br>    - Fix Lỗi Giảm Luồng Khi Mở Edge Lỗi <br>   - Fix Lỗi Check Coutry, Copy Mail<br>   - Thêm Super Bypass Identify<br>   - Đổi Thuật Toán Gen Key<br>   - Thêm Lưu Cookie, Lưu Các Từ Khoá Riêng Lẻ File<br>   - Thêm Click Dạng Update Info<br>   - Thêm Nhận Dạng Mail 2Fa",
-  "log":"ele_click,//*[contains(text(),'Skip ')],,|ele,//*[@value='Verify'],error,2Fa ?|url,proofs/Verify?,error,2Fa ?|url,/recover?,error,2Fa ?|url,/Abuse?,error,2Fa ?"
+  "log":"ele,//*[@value='Verify'],error,2Fa ?|url,proofs/Verify?,error,2Fa ?|url,/recover?,error,2Fa ?|url,/Abuse?,error,2Fa ?"
 }
