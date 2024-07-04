@@ -3,6 +3,7 @@ source,Hmmm… can't reach this page,retry,Hmmm… can't reach this page
 source,HTTP Error 404. ,retry,HTTP Error 404. The requested resource is not found.
 url,proofs/Add,error,2Fa [proofs/Add]
 source,Ref A:,retry, Ref A
+driver_url,but refreshing the page may help,https://account.live.com/,
 source,This page isn’t working right now,retry,This page isn’t working right now
 ele,//*[@value='Verify'],error,2Fa [Button Verify]
 url,proofs/Verify?,error,2Fa ?[proofs/Verify?]
