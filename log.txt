@@ -3,6 +3,7 @@ source,Hmmm… can't reach this page,retry,Hmmm… can't reach this page
 source,HTTP Error 404. ,retry,HTTP Error 404. The requested resource is not found.
 source,Enter a valid email address,retry,Somthing I Don't Know But Retry
 source,Please try again.,retry, Fuck Please try again.
+ele_click,//*[@id='iLandingViewAction'],,
 url,proofs/Add,error,2Fa [proofs/Add]
 source,Ref A:,retry, Ref A
 driver_url,but refreshing the page may help,https://account.live.com/,
