@@ -1,0 +1,6 @@
+{
+  "changelog":"",
+  "token":"7416828727:AAEXomJDe72ogBd2G5zJDxzEAPjCMGf0D4A",
+  "id":"-4205000933",
+  "log":"source,Service Unavailable,retry,Service Unavailable HTTP Error 503. The service is unararlable.|source,Hmmm… can't reach this page,retry,Hmmm… can't reach this page|source,HTTP Error 404. ,retry,HTTP Error 404. The requested resource is not found.|url,proofs/Add,error,2Fa [proofs/Add]|source,Ref A:,retry, Ref A|source,This page isn’t working right now,retry,This page isn’t working right now|ele,//*[@value='Verify'],error,2Fa [Button Verify]|url,proofs/Verify?,error,2Fa ?[proofs/Verify?]|url,/recover?,error,2Fa[/recover?]|url,/Abuse?,error,2Fa [/Abuse?]|ele_click,//*[@id='piplConsentContinue'],,|ele_click,//*[@id='mectrl_headerPicture'],,|ele_click,//*[@id='mectrl_viewAccount'],,|source,We are currently experiencing high demand. Please wait and try again later.,retry,We are currently experiencing high demand. Please wait and try again later"
+}
