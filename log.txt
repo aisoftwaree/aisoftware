@@ -8,6 +8,7 @@ ele_click,//*[@id='iLandingViewAction'],,
 url,proofs/Add,error,2Fa [proofs/Add]
 source,Ref A:,retry, Ref A
 source,This page isn’t working right now,retry,This page isn’t working right now
+source,Too Many Requests,retry,Too Many Requests
 ele,//*[@value='Verify'],error,2Fa [Button Verify]
 url,proofs/Verify?,error,2Fa ?[proofs/Verify?]
 url,/recover?,error,2Fa[/recover?]
