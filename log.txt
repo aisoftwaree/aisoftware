@@ -2,7 +2,6 @@ source,Service Unavailable,retry,Service Unavailable HTTP Error 503. The service
 source,Hmmm… can't reach this page,retry,Hmmm… can't reach this page
 source,HTTP Error 404. ,retry,HTTP Error 404. The requested resource is not found.
 driver_url,but refreshing the page may help,https://account.live.com/,
-driver_url,Please try again,https://account.live.com/,
 ele_click,//*[@id='iLandingViewAction'],,
 url,proofs/Add,error,2Fa [proofs/Add]
 source,Ref A:,retry, Ref A
