@@ -13,6 +13,7 @@ url,proofs/Verify?,error,2Fa ?[proofs/Verify?]
 url,/recover?,error,2Fa[/recover?]
 url,com/RecoverAcc,error, 2Fa [com/RecoverAccount]
 url,/Abuse?,error,2Fa [/Abuse?]
+url,com/Email/Confirm,error,2Fa [com/Email/Confirm]
 ele_click,//*[@id='piplConsentContinue'],,
 ele_click,//*[contains(text(),'Accept')],,
 ele_click,//*[@id='mectrl_headerPicture'],,|ele_click,//*[@id='mectrl_viewAccount'],,
