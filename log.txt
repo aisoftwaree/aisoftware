@@ -19,6 +19,7 @@ url,com/Email/Confirm,error,2Fa [com/Email/Confirm]
 ele_click,//*[@id='piplConsentContinue'],,
 ele_click,//*[contains(text(),'Accept')],,
 ele_click,//*[@id='mectrl_headerPicture'],,|ele_click,//*[@id='mectrl_viewAccount'],,
+ele_click,//*[@id='landing-page-dialog.close'],,
 source,We are currently experiencing high demand. Please wait and try again later.,retry,We are currently experiencing high demand. Please wait and try again later
 urlr,proofs/Verify?,error,2Fa ?[proofs/Verify?]
 urlr,m/recover?,error,2Fa[/recover?]
