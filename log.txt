@@ -4,7 +4,7 @@ source,HTTP Error 404. ,retry,HTTP Error 404. The requested resource is not foun
 driver_url,but refreshing the page may help,https://account.live.com/,
 ele_click,//*[@id='iLandingViewAction'],,
 url,proofs/Add,error,2Fa [proofs/Add]
-driver_url,Ref A: ,https://account.live.com/,
+source,Ref A: ,retry, Ref A ?
 driver_url,<span>Please try again.</span>,https://account.live.com/,
 driver_url,>We’re not sure what happened, but refreshing the page may help, or trying again in a little while.,https://account.live.com/,
 driver_url,> We’re not sure what happened, but refreshing the page may help, or trying again in a little while.,https://account.live.com/,
