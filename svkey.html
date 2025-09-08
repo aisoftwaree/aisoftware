@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển Thị Key Cao Cấp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Reset và biến CSS */
+        :root {
+            --primary: #2563eb;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --card-bg: rgba(255, 255, 255, 0.1);
+            --border-radius: 12px;
+            --box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--light);
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Card hiển thị key */
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+            animation: slideInUp 1s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .key-label {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .key-label i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+
+        .key-value {
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            padding: 15px 25px;
+            border-radius: var(--border-radius);
+            display: inline-block;
+            animation: pulse 2s infinite, glow 3s infinite alternate;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Courier New', monospace;
+            letter-spacing: 2px;
+        }
+
+        /* Grid hiệu ứng */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .feature-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        /* Stats section */
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+            animation: countUp 1.5s ease-out;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+            padding: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Nút copy */
+        .copy-btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .copy-btn:active {
+            transform: translateY(1px);
+        }
+
+        .copy-btn i {
+            margin-right: 8px;
+        }
+
+        /* Hiệu ứng nền động */
+        .background-effects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: var(--border-radius);
+            background: linear-gradient(45deg, var(--primary), transparent, var(--accent));
+            opacity: 0.1;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .shape:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -150px;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 500px;
+            height: 500px;
+            bottom: -250px;
+            right: -250px;
+            animation-delay: -5s;
+        }
+
+        .shape:nth-child(3) {
+            width: 400px;
+            height: 400px;
+            top: 50%;
+            left: 70%;
+            animation-delay: -10s;
+        }
+
+        .shape:nth-child(4) {
+            width: 250px;
+            height: 250px;
+            bottom: 30%;
+            left: 10%;
+            animation-delay: -7s;
+        }
+
+        /* Particles container */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 10px rgba(37, 99, 235, 0.3); }
+            100% { box-shadow: 0 0 30px rgba(236, 72, 153, 0.5); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(30px) rotate(240deg); }
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Typing effect */
+        .typed-cursor {
+            opacity: 1;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .key-value {
+                font-size: 2.5rem;
+                padding: 10px 20px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stat-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo">KEYDISPLAY</div>
+            <p class="tagline">Công cụ hiển thị key chuyên nghiệp với hiệu ứng động hiện đại</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <div class="key-label">
+                    <i class="fas fa-key"></i>
+                    <span>Key của bạn là:</span>
+                </div>
+                <div id="keyDisplay" class="key-value">Đang tải...</div>
+                <button id="copyBtn" class="copy-btn">
+                    <i class="fas fa-copy"></i>
+                    Sao chép key
+                </button>
+            </section>
+
+            <section class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Tốc độ cao</h3>
+                    <p class="feature-desc">Hiển thị key ngay lập tức với tốc độ tải trang được tối ưu hóa.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Bảo mật</h3>
+                    <p class="feature-desc">Key được xử lý an toàn ngay trên trình duyệt, không lưu trữ máy chủ.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="feature-title">Tùy chỉnh</h3>
+                    <p class="feature-desc">Giao diện có thể dễ dàng tùy chỉnh theo phong cách riêng của bạn.</p>
+                </div>
+            </section>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="keyLength">0</div>
+                    <div class="stat-label">Ký tự</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="keyType">-</div>
+                    <div class="stat-label">Loại key</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Tỷ lệ thành công</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 - KeyDisplay Pro | Thiết kế hiện đại với hiệu ứng động ấn tượng</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy key từ URL
+            function getKeyFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get('key');
+            }
+
+            // Hiển thị key
+            function displayKey() {
+                const keyElement = document.getElementById('keyDisplay');
+                const keyLengthElement = document.getElementById('keyLength');
+                const keyTypeElement = document.getElementById('keyType');
+                const key = getKeyFromURL();
+                
+                if (key) {
+                    // Hiệu ứng typing
+                    let i = 0;
+                    const typingEffect = setInterval(() => {
+                        if (i < key.length) {
+                            keyElement.textContent = key.substring(0, i+1);
+                            i++;
+                        } else {
+                            clearInterval(typingEffect);
+                            
+                            // Thêm con trỏ nhấp nháy
+                            const cursor = document.createElement('span');
+                            cursor.className = 'typed-cursor';
+                            cursor.textContent = '|';
+                            keyElement.appendChild(cursor);
+                        }
+                    }, 100);
+
+                    // Cập nhật thông số
+                    keyLengthElement.textContent = key.length;
+                    
+                    // Xác định loại key
+                    if (/^[0-9]+$/.test(key)) {
+                        keyTypeElement.textContent = 'Số';
+                    } else if (/^[a-zA-Z0-9]+$/.test(key)) {
+                        keyTypeElement.textContent = 'Chữ & số';
+                    } else {
+                        keyTypeElement.textContent = 'Hỗn hợp';
+                    }
+                    
+                    // Thêm hiệu ứng sau khi hiển thị xong
+                    setTimeout(() => {
+                        keyElement.style.animation = 'none';
+                        setTimeout(() => {
+                            keyElement.style.animation = 'pulse 2s infinite, glow 3s infinite alternate';
+                        }, 10);
+                    }, key.length * 100 + 1000);
+                } else {
+                    keyElement.textContent = 'Không tìm thấy key!';
+                    keyElement.style.background = 'linear-gradient(45deg, #ff6b6b, #ee5a24)';
+                    keyLengthElement.textContent = '0';
+                    keyTypeElement.textContent = '-';
+                }
+            }
+
+            // Sao chép key
+            document.getElementById('copyBtn').addEventListener('click', function() {
+                const key = getKeyFromURL();
+                if (key) {
+                    navigator.clipboard.writeText(key).then(() => {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-check"></i> Đã sao chép!';
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Lỗi khi sao chép: ', err);
+                        alert('Không thể sao chép key. Vui thử thủ thủ công.');
+                    });
+                }
+            });
+
+            // Khởi tạo particles
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#ffffff" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.2, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.1, width: 1 },
+                    move: { enable: true, speed: 2, direction: "none", random: true, straight: false, out_mode: "out" }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
+                    modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+                }
+            });
+
+            // Khởi tạo
+            displayKey();
+        });
+    </script>
+</body>
+</html>
