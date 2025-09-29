@@ -21,11 +21,11 @@ class AnimationController {
         
         tl.to('.loading-progress', {
             width: '100%',
-            duration: 3,
+            duration: 2,
             ease: 'power2.inOut'
         })
         .to('.loading-text', {
-            innerHTML: 'Ready!',
+            innerHTML: 'Nigga!',
             duration: 0.5
         }, '-=0.5')
         .to('#loading-screen', {
