@@ -1,4 +1,4 @@
-
+// GSAP ScrollTrigger registration
 gsap.registerPlugin(ScrollTrigger);
 
 class AnimationController {
@@ -40,6 +40,7 @@ class AnimationController {
     }
     
     startMainAnimations() {
+        // Logo entrance animation
         anime({
             targets: '.hero-logo',
             scale: [0, 1],
@@ -48,6 +49,8 @@ class AnimationController {
             delay: 200,
             easing: 'easeOutElastic(1, .6)'
         });
+        
+        // Hero title animation
         anime({
             targets: '.title-word',
             translateY: [100, 0],
@@ -83,7 +86,7 @@ class AnimationController {
             ease: 'back.out(1.7)'
         });
         
-
+        // Media gallery entrance
         anime({
             targets: '.media-item',
             scale: [0.8, 1],
@@ -104,6 +107,7 @@ class AnimationController {
     }
     
     setupHeroAnimations() {
+        // Parallax effect for hero content
         gsap.to('.hero-content', {
             yPercent: -50,
             ease: 'none',
@@ -114,6 +118,8 @@ class AnimationController {
                 scrub: true
             }
         });
+        
+        // Hero title scaling on scroll
         gsap.to('.hero-title', {
             scale: 0.8,
             opacity: 0.5,
@@ -128,6 +134,7 @@ class AnimationController {
     }
     
     setupScrollAnimations() {
+        // Section fade-in animations
         gsap.utils.toArray('section:not(.hero-section)').forEach(section => {
             gsap.from(section, {
                 y: 100,
@@ -143,7 +150,7 @@ class AnimationController {
             });
         });
         
-
+        // Section title animations
         gsap.utils.toArray('.section-title').forEach(title => {
             gsap.from(title, {
                 y: 50,
@@ -158,6 +165,7 @@ class AnimationController {
             });
         });
         
+        // Progressive section reveals
         gsap.utils.toArray('.section-subtitle').forEach(subtitle => {
             gsap.from(subtitle, {
                 x: -30,
@@ -175,6 +183,7 @@ class AnimationController {
     }
     
     setupSectionAnimations() {
+        // About cards animation
         ScrollTrigger.batch('.about-card', {
             onEnter: (elements) => {
                 anime({
@@ -188,6 +197,8 @@ class AnimationController {
             },
             start: 'top 85%'
         });
+        
+        // Profile image animation
         ScrollTrigger.batch('.profile-image', {
             onEnter: (elements) => {
                 anime({
@@ -200,6 +211,8 @@ class AnimationController {
             },
             start: 'top 85%'
         });
+        
+        // Stats counter animation
         ScrollTrigger.batch('.stat-number', {
             onEnter: (elements) => {
                 elements.forEach(element => {
@@ -218,12 +231,13 @@ class AnimationController {
                         }
                     };
                     
-                    setTimeout(counter, 500);
+                    setTimeout(counter, 500); // Delay before starting count
                 });
             },
             start: 'top 85%'
         });
         
+        // Skills categories animation
         ScrollTrigger.batch('.skills-category', {
             onEnter: (elements) => {
                 gsap.from(elements, {
@@ -237,6 +251,7 @@ class AnimationController {
             start: 'top 80%'
         });
         
+        // Contact items animation
         ScrollTrigger.batch('.contact-item', {
             onEnter: (elements) => {
                 anime({
@@ -253,6 +268,7 @@ class AnimationController {
     }
     
     setupMicroInteractions() {
+        // Navigation hover effects
         document.querySelectorAll('.nav-menu a').forEach(link => {
             link.addEventListener('mouseenter', () => {
                 anime({
@@ -273,6 +289,7 @@ class AnimationController {
             });
         });
         
+        // Button hover effects
         document.querySelectorAll('.cta-button, .project-btn, .submit-btn').forEach(button => {
             button.addEventListener('mouseenter', () => {
                 anime({
@@ -293,6 +310,7 @@ class AnimationController {
             });
         });
         
+        // Card hover animations
         document.querySelectorAll('.about-card, .project-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
                 anime({
@@ -315,6 +333,7 @@ class AnimationController {
             });
         });
         
+        // Form input focus effects
         document.querySelectorAll('input, textarea').forEach(input => {
             input.addEventListener('focus', () => {
                 anime({
@@ -337,6 +356,7 @@ class AnimationController {
     }
     
     setupSkillBars() {
+        // Animated skill bars
         ScrollTrigger.batch('.skill-progress', {
             onEnter: (elements) => {
                 elements.forEach(bar => {
@@ -354,6 +374,7 @@ class AnimationController {
     }
     
     setupProjectCards() {
+        // Project cards entrance animation
         ScrollTrigger.batch('.project-card', {
             onEnter: (elements) => {
                 anime({
@@ -368,6 +389,7 @@ class AnimationController {
             start: 'top 85%'
         });
         
+        // Project tags animation on card hover
         document.querySelectorAll('.project-card').forEach(card => {
             const tags = card.querySelectorAll('.project-tags span');
             
@@ -383,6 +405,7 @@ class AnimationController {
         });
     }
     
+    // Text reveal animation utility
     revealText(selector, delay = 0) {
         const elements = document.querySelectorAll(selector);
         elements.forEach(element => {
@@ -402,6 +425,7 @@ class AnimationController {
         });
     }
     
+    // Page transition animation
     transitionTo(targetSection) {
         const currentY = window.scrollY;
         const targetElement = document.querySelector(targetSection);
@@ -413,12 +437,14 @@ class AnimationController {
             ease: 'power2.inOut'
         });
         
+        // Update Three.js scene
         if (window.threeScene) {
             window.threeScene.updateForSection(targetSection.replace('#', ''));
         }
     }
 }
 
+// Cursor trail effect
 class CursorTrail {
     constructor() {
         this.cursor = document.querySelector('.cursor');
@@ -436,6 +462,8 @@ class CursorTrail {
         });
         
         this.updateCursor();
+        
+        // Cursor interactions
         document.querySelectorAll('a, button, .project-card, .about-card').forEach(el => {
             el.addEventListener('mouseenter', () => {
                 this.cursor.style.transform = 'scale(1.5)';
@@ -464,6 +492,8 @@ class CursorTrail {
         requestAnimationFrame(() => this.updateCursor());
     }
 }
+
+// Initialize animations when DOM is loaded
 let animationController, cursorTrail;
 
 window.addEventListener('DOMContentLoaded', () => {
