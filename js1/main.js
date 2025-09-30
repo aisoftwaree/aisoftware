@@ -1,1 +1,633 @@
-const _0x2fbd94=_0x4110;function _0x4bf6(){const _0xdc6919=['createProjectModal','--primary-color','showFormError','291658dkWkTO','<li>','MongoDB','PvP\x20arena\x20system','home','#666','Form\x20submitted:','translateX(400px)','1UzosOU','.submit-btn','--secondary-color','.project-card','.nav-menu\x20a','test','27200HNgCza','https://hntech.dev','innerHTML','MySQL','textContent','10rsTDQH','showProjectDetails','section-','querySelectorAll','PortfolioController','setupThemeEffects','preventDefault','projects','</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22project-description\x22>','active','setupNavigation','click','updateNavbarStyle','killTweensOf','closeMobileMenu','MMO\x20Game\x20System','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal-overlay\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal-content\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22modal-close\x22>&times;</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>','Escape','Selenium','-20%\x200px\x20-80%\x200px','Bug\x20detection\x20AI','OpenCV','Đang\x20gửi...','navigateToSection','currentSection','Resource\x20optimization','threeScene','assign','setupProjectInteractions','project-modal','#00ff88','modal-styles','651805WNFipf','Performance\x20profiler','Vui\x20lòng\x20điền\x20đầy\x20đủ\x20thông\x20tin!','trim','#00ffaa','section[id]','Unity','setupKeyboardNavigation','documentElement','name','toggle','contact-form','head','section-contact','addEventListener','Guild\x20management','description','JavaScript','.navbar','Docker','2630340qgFUtl','appendChild','error','easeOutQuart','Tin\x20nhắn\x20đã\x20được\x20gửi\x20thành\x20công!','showFormSuccess','disabled','white','validateForm','8px','setupSmoothScrolling','length','DOMContentLoaded','classList','success','#ff6b6b','section-projects','substring','skills','className','key','20px','target','480VpGqoV','Node.js','.nav-menu','power2.in','div','Electron','location','power2.inOut','map','init','getAttribute','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22modal-btn\x20primary\x22>View\x20Demo</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22modal-btn\x20secondary\x22>Source\x20Code</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','Automation\x20Suite','isIntersecting','Automated\x20game\x20testing','email','#ff8c42','hidden','.modal-content','#ff4444','metaKey','Developer\x20Tools','message','createElement','Asset\x20management\x20system','reset','isValidEmail','.nav-menu\x20a[data-nav]','getHours','scrollY','join','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.project-modal\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2010000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-overlay\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20backdrop-filter:\x20blur(10px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20600px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x2080vh;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x202rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(10,\x2010,\x2010,\x200.95);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-close\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x201rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x201rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-close:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--bg-dark);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tech-tags\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x200.5rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x201rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.tech-tag\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200.3rem\x200.8rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x20255,\x20255,\x200.1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x200.8rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-actions\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x201rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x202rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200.8rem\x201.5rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20600;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-btn.primary\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--gradient-primary);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--bg-dark);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.modal-btn.secondary\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--primary-color);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20','power2.out','section-home','9gsGJrx','removeChild','add','.project-modal','setupMobileMenu','updateActiveNavLink','beforeunload','title','remove','600','setFormLoading','.modal-overlay','<span\x20class=\x22tech-tag\x22>','setupContactForm','contains','indexOf','body','Python','5007240ZcnGoN','easeInQuart','querySelector','getElementById','href','0\x2010px\x2030px\x20rgba(0,\x200,\x200,\x200.3)','style','React','data-nav','setProperty','ctrlKey','CI/CD\x20pipeline\x20integration','.modal-close','#ff0080','#00ddff','isMenuOpen','2081847lrMxDL','fixed','forEach','keydown','value','5513695cIqQVL','a[href^=\x22#\x22]','removeEventListener','toggleMobileMenu','Character\x20progression','submitForm','.nav-toggle','about','showNotification','.nav-brand','</li>','rgba(10,\x2010,\x2010,\x200.95)','section-about','ArrowUp','notification\x20notification-'];_0x4bf6=function(){return _0xdc6919;};return _0x4bf6();}function _0x4110(_0x192b5b,_0x416601){const _0x4bf670=_0x4bf6();return _0x4110=function(_0x411090,_0x2ba385){_0x411090=_0x411090-0x1b8;let _0x215135=_0x4bf670[_0x411090];return _0x215135;},_0x4110(_0x192b5b,_0x416601);}(function(_0x151cec,_0x5f500c){const _0x1712ef=_0x4110,_0x2ed37d=_0x151cec();while(!![]){try{const _0x6c0e45=-parseInt(_0x1712ef(0x256))/0x1*(-parseInt(_0x1712ef(0x24e))/0x2)+parseInt(_0x1712ef(0x237))/0x3+-parseInt(_0x1712ef(0x1dc))/0x4+parseInt(_0x1712ef(0x25c))/0x5*(parseInt(_0x1712ef(0x1f3))/0x6)+-parseInt(_0x1712ef(0x1c8))/0x7+parseInt(_0x1712ef(0x227))/0x8*(-parseInt(_0x1712ef(0x215))/0x9)+parseInt(_0x1712ef(0x261))/0xa*(parseInt(_0x1712ef(0x23c))/0xb);if(_0x6c0e45===_0x5f500c)break;else _0x2ed37d['push'](_0x2ed37d['shift']());}catch(_0x353879){_0x2ed37d['push'](_0x2ed37d['shift']());}}}(_0x4bf6,0x61902));if(window[_0x2fbd94(0x1f9)]['href']['startsWith'](_0x2fbd94(0x25d))){class PortfolioController{constructor(){const _0x10ef6a=_0x2fbd94;this[_0x10ef6a(0x1c0)]=_0x10ef6a(0x252),this[_0x10ef6a(0x236)]=![],this[_0x10ef6a(0x1fc)]();}[_0x2fbd94(0x1fc)](){const _0x227cf9=_0x2fbd94;this[_0x227cf9(0x26b)](),this[_0x227cf9(0x219)](),this['setupScrollSpy'](),this[_0x227cf9(0x222)](),this[_0x227cf9(0x1e6)](),this[_0x227cf9(0x1cf)](),this[_0x227cf9(0x1c4)](),this[_0x227cf9(0x266)]();}[_0x2fbd94(0x26b)](){const _0xc1587c=_0x2fbd94,_0x31657b=document[_0xc1587c(0x264)](_0xc1587c(0x20e));_0x31657b[_0xc1587c(0x239)](_0x1b0cb5=>{const _0x99282=_0xc1587c;_0x1b0cb5['addEventListener'](_0x99282(0x26c),_0x338848=>{const _0xac389b=_0x99282;_0x338848[_0xac389b(0x267)]();const _0x360f99=_0x1b0cb5[_0xac389b(0x1fd)](_0xac389b(0x22f));this[_0xac389b(0x1bf)](_0x360f99),this[_0xac389b(0x26f)]();});}),document[_0xc1587c(0x229)](_0xc1587c(0x245))[_0xc1587c(0x1d6)](_0xc1587c(0x26c),()=>{const _0xd6e25=_0xc1587c;this[_0xd6e25(0x1bf)](_0xd6e25(0x252));});}[_0x2fbd94(0x1bf)](_0x3ca9d6){const _0x2e15b6=_0x2fbd94,_0x60d468=document[_0x2e15b6(0x22a)](_0x3ca9d6);if(!_0x60d468)return;this[_0x2e15b6(0x21a)](_0x3ca9d6),gsap['to'](window,{'scrollTo':{'y':_0x60d468,'offsetY':0x46},'duration':1.5,'ease':_0x2e15b6(0x1fa)}),window[_0x2e15b6(0x1c2)]&&window[_0x2e15b6(0x1c2)]['updateForSection'](_0x3ca9d6),this[_0x2e15b6(0x1c0)]=_0x3ca9d6;}[_0x2fbd94(0x21a)](_0x3d75c0){const _0x1530b8=_0x2fbd94,_0x31b37a=document[_0x1530b8(0x264)](_0x1530b8(0x20e));_0x31b37a[_0x1530b8(0x239)](_0xd5b1d1=>{const _0x3dbef0=_0x1530b8;_0xd5b1d1['classList']['remove']('active'),_0xd5b1d1[_0x3dbef0(0x1fd)]('data-nav')===_0x3d75c0&&_0xd5b1d1[_0x3dbef0(0x1e9)][_0x3dbef0(0x217)]('active');});}[_0x2fbd94(0x219)](){const _0x16c1cd=_0x2fbd94,_0x50cf0d=document[_0x16c1cd(0x229)](_0x16c1cd(0x242)),_0x3c10e3=document[_0x16c1cd(0x229)](_0x16c1cd(0x1f5));_0x50cf0d[_0x16c1cd(0x1d6)](_0x16c1cd(0x26c),()=>{const _0x385a62=_0x16c1cd;this[_0x385a62(0x23f)]();}),document['addEventListener']('click',_0x559d0f=>{const _0x505ee3=_0x16c1cd;!_0x50cf0d[_0x505ee3(0x223)](_0x559d0f['target'])&&!_0x3c10e3[_0x505ee3(0x223)](_0x559d0f['target'])&&this[_0x505ee3(0x26f)]();});}['toggleMobileMenu'](){const _0x5b658d=_0x2fbd94,_0xfad147=document[_0x5b658d(0x229)]('.nav-menu'),_0x5086b5=document[_0x5b658d(0x229)](_0x5b658d(0x242));this[_0x5b658d(0x236)]=!this[_0x5b658d(0x236)],_0xfad147[_0x5b658d(0x1e9)]['toggle'](_0x5b658d(0x26a)),_0x5086b5[_0x5b658d(0x1e9)][_0x5b658d(0x1d2)](_0x5b658d(0x26a)),this[_0x5b658d(0x236)]&&anime({'targets':_0x5b658d(0x25a),'translateX':[-0x1e,0x0],'opacity':[0x0,0x1],'duration':0x1f4,'delay':anime['stagger'](0x64),'easing':_0x5b658d(0x1df)});}[_0x2fbd94(0x26f)](){const _0x578672=_0x2fbd94,_0x241f16=document[_0x578672(0x229)]('.nav-menu'),_0x5e5450=document[_0x578672(0x229)]('.nav-toggle');this[_0x578672(0x236)]=![],_0x241f16[_0x578672(0x1e9)][_0x578672(0x21d)](_0x578672(0x26a)),_0x5e5450[_0x578672(0x1e9)][_0x578672(0x21d)](_0x578672(0x26a));}['setupScrollSpy'](){const _0x249eb7=_0x2fbd94,_0x5699c8=document['querySelectorAll'](_0x249eb7(0x1cd)),_0x36d1ce=document[_0x249eb7(0x264)]('.nav-menu\x20a[data-nav]'),_0x5bd829={'root':null,'rootMargin':_0x249eb7(0x1bb),'threshold':0x0},_0x4f78b6=new IntersectionObserver(_0x38cab7=>{const _0x59676a=_0x249eb7;_0x38cab7[_0x59676a(0x239)](_0x57441f=>{const _0x4472f7=_0x59676a;if(_0x57441f[_0x4472f7(0x200)]){const _0x499e62=_0x57441f[_0x4472f7(0x1f2)]['id'];this[_0x4472f7(0x21a)](_0x499e62),this[_0x4472f7(0x1c0)]=_0x499e62,this[_0x4472f7(0x26d)](_0x499e62);}});},_0x5bd829);_0x5699c8[_0x249eb7(0x239)](_0x487268=>{_0x4f78b6['observe'](_0x487268);});}[_0x2fbd94(0x26d)](_0x136e76){const _0x1b90ae=_0x2fbd94,_0x2c20cd=document[_0x1b90ae(0x229)](_0x1b90ae(0x1da));_0x2c20cd[_0x1b90ae(0x1e9)][_0x1b90ae(0x21d)](_0x1b90ae(0x214),_0x1b90ae(0x248),_0x1b90ae(0x1ec),'section-skills',_0x1b90ae(0x1d5)),_0x2c20cd[_0x1b90ae(0x1e9)][_0x1b90ae(0x217)](_0x1b90ae(0x263)+_0x136e76);const _0x9249ec=window[_0x1b90ae(0x210)];_0x9249ec>0x64?_0x2c20cd[_0x1b90ae(0x22d)]['background']=_0x1b90ae(0x247):_0x2c20cd[_0x1b90ae(0x22d)]['background']='rgba(10,\x2010,\x2010,\x200.7)';}[_0x2fbd94(0x222)](){const _0x7a373=_0x2fbd94,_0x55f007=document[_0x7a373(0x22a)](_0x7a373(0x1d3)),_0x316289=document[_0x7a373(0x229)]('.submit-btn');_0x55f007[_0x7a373(0x1d6)]('submit',async _0x25dec9=>{const _0x4864fa=_0x7a373;_0x25dec9[_0x4864fa(0x267)]();const _0x358054=new FormData(_0x55f007),_0x1aff9c={'name':document[_0x4864fa(0x22a)](_0x4864fa(0x1d1))['value'],'email':document['getElementById']('email')['value'],'message':document['getElementById'](_0x4864fa(0x209))[_0x4864fa(0x23b)]};if(!this[_0x4864fa(0x1e4)](_0x1aff9c)){this[_0x4864fa(0x24d)](_0x4864fa(0x1ca));return;}this[_0x4864fa(0x21f)](!![]);try{await this[_0x4864fa(0x241)](_0x1aff9c),this['showFormSuccess'](_0x4864fa(0x1e0)),_0x55f007[_0x4864fa(0x20c)]();}catch(_0x496584){this[_0x4864fa(0x24d)]('Có\x20lỗi\x20xảy\x20ra.\x20Vui\x20lòng\x20thử\x20lại!');}finally{this['setFormLoading'](![]);}});}[_0x2fbd94(0x1e4)](_0x1777e4){const _0x4f0d26=_0x2fbd94;return _0x1777e4[_0x4f0d26(0x1d1)][_0x4f0d26(0x1cb)]()&&_0x1777e4[_0x4f0d26(0x202)][_0x4f0d26(0x1cb)]()&&_0x1777e4[_0x4f0d26(0x209)]['trim']()&&this[_0x4f0d26(0x20d)](_0x1777e4[_0x4f0d26(0x202)]);}['isValidEmail'](_0x43af13){const _0xbdc75a=_0x2fbd94,_0x5533fc=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;return _0x5533fc[_0xbdc75a(0x25b)](_0x43af13);}async[_0x2fbd94(0x241)](_0x36ce2a){return new Promise(_0x4c8860=>{setTimeout(()=>{const _0xb069f7=_0x4110;console['log'](_0xb069f7(0x254),_0x36ce2a),_0x4c8860();},0x7d0);});}['setFormLoading'](_0x1488f9){const _0x458b1d=_0x2fbd94,_0x5ba07e=document['querySelector'](_0x458b1d(0x257));_0x1488f9?(_0x5ba07e[_0x458b1d(0x1e2)]=!![],_0x5ba07e['textContent']=_0x458b1d(0x1be),anime({'targets':_0x5ba07e,'backgroundColor':_0x458b1d(0x253),'duration':0x12c})):(_0x5ba07e[_0x458b1d(0x1e2)]=![],_0x5ba07e['textContent']='Send\x20Message',anime({'targets':_0x5ba07e,'backgroundColor':'#00ffff','duration':0x12c}));}[_0x2fbd94(0x1e1)](_0x301e89){const _0x5e529f=_0x2fbd94;this[_0x5e529f(0x244)](_0x301e89,_0x5e529f(0x1ea));}[_0x2fbd94(0x24d)](_0x23f52e){const _0x17d7c2=_0x2fbd94;this['showNotification'](_0x23f52e,_0x17d7c2(0x1de));}['showNotification'](_0x11ee6f,_0x2a3593){const _0x7f113f=_0x2fbd94,_0x4fd7ec=document[_0x7f113f(0x20a)](_0x7f113f(0x1f7));_0x4fd7ec[_0x7f113f(0x1ef)]=_0x7f113f(0x24a)+_0x2a3593,_0x4fd7ec[_0x7f113f(0x260)]=_0x11ee6f,Object[_0x7f113f(0x1c3)](_0x4fd7ec['style'],{'position':_0x7f113f(0x238),'top':_0x7f113f(0x1f1),'right':'20px','padding':'15px\x2025px','borderRadius':_0x7f113f(0x1e5),'color':_0x7f113f(0x1e3),'fontWeight':_0x7f113f(0x21e),'zIndex':'10001','transform':_0x7f113f(0x255),'background':_0x2a3593===_0x7f113f(0x1ea)?_0x7f113f(0x1c6):_0x7f113f(0x206),'boxShadow':_0x7f113f(0x22c)}),document['body'][_0x7f113f(0x1dd)](_0x4fd7ec),anime({'targets':_0x4fd7ec,'translateX':[0x190,0x0],'duration':0x1f4,'easing':_0x7f113f(0x1df)}),setTimeout(()=>{const _0x56e07b=_0x7f113f;anime({'targets':_0x4fd7ec,'translateX':[0x0,0x190],'opacity':[0x1,0x0],'duration':0x190,'easing':_0x56e07b(0x228),'complete':()=>{const _0x461a42=_0x56e07b;document[_0x461a42(0x225)][_0x461a42(0x216)](_0x4fd7ec);}});},0xfa0);}[_0x2fbd94(0x1e6)](){const _0x204d57=_0x2fbd94;document[_0x204d57(0x264)](_0x204d57(0x23d))['forEach'](_0x33c2bd=>{_0x33c2bd['addEventListener']('click',_0x566286=>{const _0x4d2990=_0x4110;_0x566286[_0x4d2990(0x267)]();const _0x338ac7=_0x33c2bd[_0x4d2990(0x1fd)](_0x4d2990(0x22b))[_0x4d2990(0x1ed)](0x1);_0x338ac7&&this['navigateToSection'](_0x338ac7);});});}[_0x2fbd94(0x1cf)](){const _0x4e0c0a=_0x2fbd94;document[_0x4e0c0a(0x1d6)](_0x4e0c0a(0x23a),_0x539ecc=>{const _0x198ea1=_0x4e0c0a;if(_0x539ecc[_0x198ea1(0x231)]||_0x539ecc[_0x198ea1(0x207)]){const _0x30bd64=[_0x198ea1(0x252),_0x198ea1(0x243),_0x198ea1(0x268),_0x198ea1(0x1ee),'contact'],_0x1ae8d3=_0x30bd64[_0x198ea1(0x224)](this[_0x198ea1(0x1c0)]);if(_0x539ecc[_0x198ea1(0x1f0)]==='ArrowDown'&&_0x1ae8d3<_0x30bd64[_0x198ea1(0x1e7)]-0x1)_0x539ecc[_0x198ea1(0x267)](),this['navigateToSection'](_0x30bd64[_0x1ae8d3+0x1]);else _0x539ecc[_0x198ea1(0x1f0)]===_0x198ea1(0x249)&&_0x1ae8d3>0x0&&(_0x539ecc['preventDefault'](),this[_0x198ea1(0x1bf)](_0x30bd64[_0x1ae8d3-0x1]));}_0x539ecc[_0x198ea1(0x1f0)]===_0x198ea1(0x1b9)&&this['isMenuOpen']&&this['closeMobileMenu']();});}['setupProjectInteractions'](){const _0x55c029=_0x2fbd94,_0x20cfdf=document['querySelectorAll'](_0x55c029(0x259));_0x20cfdf['forEach'](_0x38be82=>{const _0x2b8983=_0x55c029,_0x118e46=_0x38be82[_0x2b8983(0x229)]('.project-btn');_0x118e46['addEventListener'](_0x2b8983(0x26c),()=>{const _0xe5d2ef=_0x2b8983,_0x38b073=_0x38be82[_0xe5d2ef(0x1fd)]('data-project');this[_0xe5d2ef(0x262)](_0x38b073);});});}[_0x2fbd94(0x262)](_0x1b9695){const _0x1a0f4d=_0x2fbd94,_0x184e57={'mmo':{'title':_0x1a0f4d(0x270),'description':'Advanced\x20combat\x20system\x20với\x20real-time\x20multiplayer\x20architecture.\x20Bao\x20gồm\x20character\x20progression,\x20guild\x20system,\x20và\x20PvP\x20mechanics.','technologies':[_0x1a0f4d(0x1ce),'C#','Photon\x20Networking',_0x1a0f4d(0x25f),'Redis'],'features':['Real-time\x20combat\x20system','Multiplayer\x20synchronization',_0x1a0f4d(0x240),_0x1a0f4d(0x1d7),_0x1a0f4d(0x251)]},'automation':{'title':_0x1a0f4d(0x1ff),'description':'Bộ\x20tools\x20automation\x20comprehensive\x20cho\x20game\x20development\x20workflow\x20và\x20testing.','technologies':[_0x1a0f4d(0x226),_0x1a0f4d(0x1ba),_0x1a0f4d(0x1bd),'TensorFlow',_0x1a0f4d(0x1db)],'features':[_0x1a0f4d(0x201),'Performance\x20monitoring',_0x1a0f4d(0x232),_0x1a0f4d(0x1c1),_0x1a0f4d(0x1bc)]},'tools':{'title':_0x1a0f4d(0x208),'description':'Custom\x20tools\x20và\x20plugins\x20để\x20tăng\x20productivity\x20cho\x20developers\x20và\x20content\x20creators.','technologies':[_0x1a0f4d(0x1d9),_0x1a0f4d(0x1f4),_0x1a0f4d(0x1f8),_0x1a0f4d(0x22e),_0x1a0f4d(0x250)],'features':['Code\x20generation\x20tools',_0x1a0f4d(0x20b),_0x1a0f4d(0x1c9),'Version\x20control\x20integration','Cross-platform\x20deployment']}},_0x2c6a2d=_0x184e57[_0x1b9695];if(!_0x2c6a2d)return;this[_0x1a0f4d(0x24b)](_0x2c6a2d);}[_0x2fbd94(0x24b)](_0xf9bd25){const _0x3a9d90=_0x2fbd94,_0xc476ec=document['querySelector'](_0x3a9d90(0x218));_0xc476ec&&_0xc476ec[_0x3a9d90(0x21d)]();const _0x379718=document[_0x3a9d90(0x20a)](_0x3a9d90(0x1f7));_0x379718['className']=_0x3a9d90(0x1c5),_0x379718[_0x3a9d90(0x25e)]=_0x3a9d90(0x1b8)+_0xf9bd25[_0x3a9d90(0x21c)]+_0x3a9d90(0x269)+_0xf9bd25[_0x3a9d90(0x1d8)]+'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22project-details\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22project-tech\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>Technologies</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22tech-tags\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0xf9bd25['technologies'][_0x3a9d90(0x1fb)](_0x3c0ce4=>_0x3a9d90(0x221)+_0x3c0ce4+'</span>')['join']('')+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22project-features\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>Key\x20Features</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'+_0xf9bd25['features']['map'](_0x57b03c=>_0x3a9d90(0x24f)+_0x57b03c+_0x3a9d90(0x246))[_0x3a9d90(0x211)]('')+_0x3a9d90(0x1fe);const _0x4a84c8=_0x3a9d90(0x212);if(!document[_0x3a9d90(0x229)]('#modal-styles')){const _0x1dada1=document[_0x3a9d90(0x20a)]('style');_0x1dada1['id']=_0x3a9d90(0x1c7),_0x1dada1['textContent']=_0x4a84c8,document[_0x3a9d90(0x1d4)]['appendChild'](_0x1dada1);}document[_0x3a9d90(0x225)]['appendChild'](_0x379718),gsap['to'](_0x379718,{'opacity':0x1,'visibility':'visible','duration':0.3,'ease':_0x3a9d90(0x213)}),gsap['to'](_0x379718[_0x3a9d90(0x229)](_0x3a9d90(0x205)),{'scale':0x1,'duration':0.5,'delay':0.1,'ease':'back.out(1.7)'});const _0x4a0bfe=()=>{const _0x2f5db6=_0x3a9d90;gsap['to'](_0x379718,{'opacity':0x0,'visibility':_0x2f5db6(0x204),'duration':0.3,'ease':_0x2f5db6(0x1f6),'onComplete':()=>_0x379718[_0x2f5db6(0x21d)]()});};_0x379718[_0x3a9d90(0x229)](_0x3a9d90(0x233))['addEventListener'](_0x3a9d90(0x26c),_0x4a0bfe),_0x379718['querySelector'](_0x3a9d90(0x220))[_0x3a9d90(0x1d6)]('click',_0x4a0bfe);const _0xf2820a=_0x4a9bad=>{const _0x2398b8=_0x3a9d90;_0x4a9bad[_0x2398b8(0x1f0)]==='Escape'&&(_0x4a0bfe(),document[_0x2398b8(0x23e)](_0x2398b8(0x23a),_0xf2820a));};document['addEventListener']('keydown',_0xf2820a);}['setupThemeEffects'](){const _0x1e04b5=()=>{const _0x3bacff=_0x4110,_0x184d02=new Date()[_0x3bacff(0x20f)](),_0x10a180=document[_0x3bacff(0x1d0)];if(_0x184d02>=0x6&&_0x184d02<0xc)_0x10a180[_0x3bacff(0x22d)][_0x3bacff(0x230)](_0x3bacff(0x24c),_0x3bacff(0x235)),_0x10a180[_0x3bacff(0x22d)][_0x3bacff(0x230)]('--secondary-color',_0x3bacff(0x1eb));else _0x184d02>=0xc&&_0x184d02<0x12?(_0x10a180[_0x3bacff(0x22d)][_0x3bacff(0x230)](_0x3bacff(0x24c),_0x3bacff(0x1cc)),_0x10a180[_0x3bacff(0x22d)][_0x3bacff(0x230)]('--secondary-color',_0x3bacff(0x203))):(_0x10a180[_0x3bacff(0x22d)][_0x3bacff(0x230)](_0x3bacff(0x24c),'#00ffff'),_0x10a180['style'][_0x3bacff(0x230)](_0x3bacff(0x258),_0x3bacff(0x234)));};_0x1e04b5(),setInterval(_0x1e04b5,0x36ee80);}}let portfolioController;window[_0x2fbd94(0x1d6)](_0x2fbd94(0x1e8),()=>{portfolioController=new PortfolioController();}),window[_0x2fbd94(0x1d6)](_0x2fbd94(0x21b),()=>{const _0xa3b533=_0x2fbd94;gsap[_0xa3b533(0x26e)]('*');}),window[_0x2fbd94(0x265)]=PortfolioController;}
+if (window.location.href.startsWith('https://hntech.dev')) {
+class PortfolioController {
+    constructor() {
+        this.currentSection = 'home';
+        this.isMenuOpen = false;
+        this.init();
+    }
+    
+    init() {
+        this.setupNavigation();
+        this.setupMobileMenu();
+        this.setupScrollSpy();
+        this.setupContactForm();
+        this.setupSmoothScrolling();
+        this.setupKeyboardNavigation();
+        this.setupProjectInteractions();
+        this.setupThemeEffects();
+    }
+    
+    setupNavigation() {
+        const navLinks = document.querySelectorAll('.nav-menu a[data-nav]');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetSection = link.getAttribute('data-nav');
+                this.navigateToSection(targetSection);
+                this.closeMobileMenu();
+            });
+        });
+        
+        // Logo click to home
+        document.querySelector('.nav-brand').addEventListener('click', () => {
+            this.navigateToSection('home');
+        });
+    }
+    
+    navigateToSection(sectionName) {
+        const targetElement = document.getElementById(sectionName);
+        if (!targetElement) return;
+        
+        // Update active nav link
+        this.updateActiveNavLink(sectionName);
+        
+        // Smooth scroll with GSAP
+        gsap.to(window, {
+            scrollTo: {
+                y: targetElement,
+                offsetY: 70 // Account for fixed navbar
+            },
+            duration: 1.5,
+            ease: 'power2.inOut'
+        });
+        
+        // Update Three.js scene
+        if (window.threeScene) {
+            window.threeScene.updateForSection(sectionName);
+        }
+        
+        this.currentSection = sectionName;
+    }
+    
+    updateActiveNavLink(activeSection) {
+        const navLinks = document.querySelectorAll('.nav-menu a[data-nav]');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-nav') === activeSection) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    setupMobileMenu() {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            this.toggleMobileMenu();
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                this.closeMobileMenu();
+            }
+        });
+    }
+    
+    toggleMobileMenu() {
+        const navMenu = document.querySelector('.nav-menu');
+        const navToggle = document.querySelector('.nav-toggle');
+        
+        this.isMenuOpen = !this.isMenuOpen;
+        
+        navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active');
+        
+        // Animate menu items
+        if (this.isMenuOpen) {
+            anime({
+                targets: '.nav-menu a',
+                translateX: [-30, 0],
+                opacity: [0, 1],
+                duration: 500,
+                delay: anime.stagger(100),
+                easing: 'easeOutQuart'
+            });
+        }
+    }
+    
+    closeMobileMenu() {
+        const navMenu = document.querySelector('.nav-menu');
+        const navToggle = document.querySelector('.nav-toggle');
+        
+        this.isMenuOpen = false;
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+    }
+    
+    setupScrollSpy() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a[data-nav]');
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -80% 0px',
+            threshold: 0
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const sectionId = entry.target.id;
+                    this.updateActiveNavLink(sectionId);
+                    this.currentSection = sectionId;
+                    
+                    // Update navbar style based on section
+                    this.updateNavbarStyle(sectionId);
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    }
+    
+    updateNavbarStyle(sectionId) {
+        const navbar = document.querySelector('.navbar');
+        
+        // Add different styles for different sections
+        navbar.classList.remove('section-home', 'section-about', 'section-projects', 'section-skills', 'section-contact');
+        navbar.classList.add(`section-${sectionId}`);
+        
+        // Change navbar opacity based on scroll
+        const scrollY = window.scrollY;
+        if (scrollY > 100) {
+            navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(10, 10, 10, 0.7)';
+        }
+    }
+    
+    setupContactForm() {
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.querySelector('.submit-btn');
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+            
+            // Validate form
+            if (!this.validateForm(data)) {
+                this.showFormError('Vui lòng điền đầy đủ thông tin!');
+                return;
+            }
+            
+            // Show loading state
+            this.setFormLoading(true);
+            
+            try {
+                // Simulate form submission (replace with actual endpoint)
+                await this.submitForm(data);
+                this.showFormSuccess('Tin nhắn đã được gửi thành công!');
+                form.reset();
+            } catch (error) {
+                this.showFormError('Có lỗi xảy ra. Vui lòng thử lại!');
+            } finally {
+                this.setFormLoading(false);
+            }
+        });
+    }
+    
+    validateForm(data) {
+        return data.name.trim() && data.email.trim() && data.message.trim() && 
+               this.isValidEmail(data.email);
+    }
+    
+    isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+    
+    async submitForm(data) {
+        // Simulate API call
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                console.log('Form submitted:', data);
+                resolve();
+            }, 2000);
+        });
+    }
+    
+    setFormLoading(isLoading) {
+        const submitBtn = document.querySelector('.submit-btn');
+        
+        if (isLoading) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang gửi...';
+            
+            anime({
+                targets: submitBtn,
+                backgroundColor: '#666',
+                duration: 300
+            });
+        } else {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+            
+            anime({
+                targets: submitBtn,
+                backgroundColor: '#00ffff',
+                duration: 300
+            });
+        }
+    }
+    
+    showFormSuccess(message) {
+        this.showNotification(message, 'success');
+    }
+    
+    showFormError(message) {
+        this.showNotification(message, 'error');
+    }
+    
+    showNotification(message, type) {
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.textContent = message;
+        
+        // Style notification
+        Object.assign(notification.style, {
+            position: 'fixed',
+            top: '20px',
+            right: '20px',
+            padding: '15px 25px',
+            borderRadius: '8px',
+            color: 'white',
+            fontWeight: '600',
+            zIndex: '10001',
+            transform: 'translateX(400px)',
+            background: type === 'success' ? '#00ff88' : '#ff4444',
+            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.3)'
+        });
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        anime({
+            targets: notification,
+            translateX: [400, 0],
+            duration: 500,
+            easing: 'easeOutQuart'
+        });
+        
+        // Auto remove after 4 seconds
+        setTimeout(() => {
+            anime({
+                targets: notification,
+                translateX: [0, 400],
+                opacity: [1, 0],
+                duration: 400,
+                easing: 'easeInQuart',
+                complete: () => {
+                    document.body.removeChild(notification);
+                }
+            });
+        }, 4000);
+    }
+    
+    setupSmoothScrolling() {
+        // Prevent default scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = anchor.getAttribute('href').substring(1);
+                if (targetId) {
+                    this.navigateToSection(targetId);
+                }
+            });
+        });
+    }
+    
+    setupKeyboardNavigation() {
+        document.addEventListener('keydown', (e) => {
+            // Navigation with arrow keys
+            if (e.ctrlKey || e.metaKey) {
+                const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+                const currentIndex = sections.indexOf(this.currentSection);
+                
+                if (e.key === 'ArrowDown' && currentIndex < sections.length - 1) {
+                    e.preventDefault();
+                    this.navigateToSection(sections[currentIndex + 1]);
+                } else if (e.key === 'ArrowUp' && currentIndex > 0) {
+                    e.preventDefault();
+                    this.navigateToSection(sections[currentIndex - 1]);
+                }
+            }
+            
+            // Escape key to close mobile menu
+            if (e.key === 'Escape' && this.isMenuOpen) {
+                this.closeMobileMenu();
+            }
+        });
+    }
+    
+    setupProjectInteractions() {
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectCards.forEach(card => {
+            const btn = card.querySelector('.project-btn');
+            
+            btn.addEventListener('click', () => {
+                const projectType = card.getAttribute('data-project');
+                this.showProjectDetails(projectType);
+            });
+        });
+    }
+    
+    showProjectDetails(projectType) {
+        const projectData = {
+            mmo: {
+                title: 'MMO Game System',
+                description: 'Advanced combat system với real-time multiplayer architecture. Bao gồm character progression, guild system, và PvP mechanics.',
+                technologies: ['Unity', 'C#', 'Photon Networking', 'MySQL', 'Redis'],
+                features: [
+                    'Real-time combat system',
+                    'Multiplayer synchronization',
+                    'Character progression',
+                    'Guild management',
+                    'PvP arena system'
+                ]
+            },
+            automation: {
+                title: 'Automation Suite',
+                description: 'Bộ tools automation comprehensive cho game development workflow và testing.',
+                technologies: ['Python', 'Selenium', 'OpenCV', 'TensorFlow', 'Docker'],
+                features: [
+                    'Automated game testing',
+                    'Performance monitoring',
+                    'CI/CD pipeline integration',
+                    'Resource optimization',
+                    'Bug detection AI'
+                ]
+            },
+            tools: {
+                title: 'Developer Tools',
+                description: 'Custom tools và plugins để tăng productivity cho developers và content creators.',
+                technologies: ['JavaScript', 'Node.js', 'Electron', 'React', 'MongoDB'],
+                features: [
+                    'Code generation tools',
+                    'Asset management system',
+                    'Performance profiler',
+                    'Version control integration',
+                    'Cross-platform deployment'
+                ]
+            }
+        };
+        
+        const project = projectData[projectType];
+        if (!project) return;
+        
+        // Create modal
+        this.createProjectModal(project);
+    }
+    
+    createProjectModal(project) {
+        // Remove existing modal
+        const existingModal = document.querySelector('.project-modal');
+        if (existingModal) {
+            existingModal.remove();
+        }
+        
+        // Create modal HTML
+        const modal = document.createElement('div');
+        modal.className = 'project-modal';
+        modal.innerHTML = `
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <h2>${project.title}</h2>
+                <p class="project-description">${project.description}</p>
+                
+                <div class="project-details">
+                    <div class="project-tech">
+                        <h3>Technologies</h3>
+                        <div class="tech-tags">
+                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h3>Key Features</h3>
+                        <ul>
+                            ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn primary">View Demo</button>
+                    <button class="modal-btn secondary">Source Code</button>
+                </div>
+            </div>
+        `;
+        
+        // Add modal styles
+        const modalStyles = `
+            .project-modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 10000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            .modal-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(10px);
+            }
+            
+            .modal-content {
+                position: relative;
+                max-width: 600px;
+                max-height: 80vh;
+                margin: 20px;
+                padding: 2rem;
+                background: rgba(10, 10, 10, 0.95);
+                border: 1px solid var(--primary-color);
+                border-radius: 12px;
+                color: white;
+                overflow-y: auto;
+                transform: scale(0.8);
+            }
+            
+            .modal-close {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                width: 40px;
+                height: 40px;
+                background: none;
+                border: none;
+                color: var(--primary-color);
+                font-size: 24px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+            }
+            
+            .modal-close:hover {
+                background: var(--primary-color);
+                color: var(--bg-dark);
+            }
+            
+            .tech-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+            
+            .tech-tag {
+                padding: 0.3rem 0.8rem;
+                background: rgba(0, 255, 255, 0.1);
+                border: 1px solid var(--primary-color);
+                border-radius: 20px;
+                font-size: 0.8rem;
+                color: var(--primary-color);
+            }
+            
+            .modal-actions {
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+                justify-content: center;
+            }
+            
+            .modal-btn {
+                padding: 0.8rem 1.5rem;
+                border: none;
+                border-radius: 6px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            
+            .modal-btn.primary {
+                background: var(--gradient-primary);
+                color: var(--bg-dark);
+            }
+            
+            .modal-btn.secondary {
+                background: transparent;
+                color: var(--primary-color);
+                border: 1px solid var(--primary-color);
+            }
+        `;
+        
+        // Add styles to head
+        if (!document.querySelector('#modal-styles')) {
+            const styleEl = document.createElement('style');
+            styleEl.id = 'modal-styles';
+            styleEl.textContent = modalStyles;
+            document.head.appendChild(styleEl);
+        }
+        
+        document.body.appendChild(modal);
+        
+        // Animate modal in
+        gsap.to(modal, {
+            opacity: 1,
+            visibility: 'visible',
+            duration: 0.3,
+            ease: 'power2.out'
+        });
+        
+        gsap.to(modal.querySelector('.modal-content'), {
+            scale: 1,
+            duration: 0.5,
+            delay: 0.1,
+            ease: 'back.out(1.7)'
+        });
+        
+        // Close modal events
+        const closeModal = () => {
+            gsap.to(modal, {
+                opacity: 0,
+                visibility: 'hidden',
+                duration: 0.3,
+                ease: 'power2.in',
+                onComplete: () => modal.remove()
+            });
+        };
+        
+        modal.querySelector('.modal-close').addEventListener('click', closeModal);
+        modal.querySelector('.modal-overlay').addEventListener('click', closeModal);
+        
+        // Escape key to close
+        const escapeHandler = (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                document.removeEventListener('keydown', escapeHandler);
+            }
+        };
+        document.addEventListener('keydown', escapeHandler);
+    }
+    
+    setupThemeEffects() {
+        // Dynamic color effects based on time
+        const updateThemeColors = () => {
+            const hour = new Date().getHours();
+            const root = document.documentElement;
+            
+            if (hour >= 6 && hour < 12) {
+                // Morning theme
+                root.style.setProperty('--primary-color', '#00ddff');
+                root.style.setProperty('--secondary-color', '#ff6b6b');
+            } else if (hour >= 12 && hour < 18) {
+                // Afternoon theme
+                root.style.setProperty('--primary-color', '#00ffaa');
+                root.style.setProperty('--secondary-color', '#ff8c42');
+            } else {
+                // Evening/Night theme (default)
+                root.style.setProperty('--primary-color', '#00ffff');
+                root.style.setProperty('--secondary-color', '#ff0080');
+            }
+        };
+        
+        updateThemeColors();
+
+        setInterval(updateThemeColors, 3600000);
+    }
+}
+
+// Initialize when DOM is loaded
+let portfolioController;
+
+window.addEventListener('DOMContentLoaded', () => {
+    portfolioController = new PortfolioController();
+});
+
+// Performance optimization
+window.addEventListener('beforeunload', () => {
+    // Cleanup animations and intervals
+    gsap.killTweensOf('*');
+});
+
+// Export for global access
+window.PortfolioController = PortfolioController;
+}
